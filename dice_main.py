@@ -1,6 +1,11 @@
 # Main script for the dice project
 import sys
 
+from dice import Dice
+
+def play():
+    pass
+
 print('******************Dice Simulator********************')
 
 print("\nWrite 't' to throw the dices.")
@@ -14,6 +19,6 @@ while True:
         print('Invalid input. Try again.\n')
 
 if option == 't':
-    pass
+    play()    
 if option == 'q':
     sys.exit()
