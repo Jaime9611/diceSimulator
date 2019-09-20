@@ -1,8 +1,9 @@
 import random
 
 class Dice:
-    def __init__(self, number_of_faces=6):
-        self.faces = number_of_faces
+    """Class to define a dice object with 'n' number of sides"""
+    def __init__(self, number_of_sides=6):
+        self.sides = number_of_sides
 
     def throw_dice(self):
-        pass
+        return random.randrange(1, self.sides + 1)
